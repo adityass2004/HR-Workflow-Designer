@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0f1117;
+  --bg-surface: #1a1d27;
+  --accent-blue: #4f8ef7;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-red: #ef4444;
+  --text-primary: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border-default: #2e323e;
+}
+
+@layer base {
+  body {
+    @apply bg-background-primary text-text-primary antialiased;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,0 +1,288 @@
+{
+  "nodes": [
+    {
+      "id": "start-1",
+      "type": "start",
+      "position": { "x": 100, "y": 450 },
+      "data": {
+        "id": "start-1",
+        "type": "start",
+        "label": "Start",
+        "configured": true,
+        "title": "Begin Map",
+        "metadata": []
+      }
+    },
+    {
+      "id": "proj-1",
+      "type": "project",
+      "position": { "x": 400, "y": 0 },
+      "data": {
+        "id": "proj-1",
+        "type": "project",
+        "label": "Project",
+        "configured": true,
+        "name": "New marketing campaign",
+        "platform": "Asana",
+        "typeLabel": "Project",
+        "issueCount": 6,
+        "progress": 67
+      }
+    },
+    {
+      "id": "proj-2",
+      "type": "project",
+      "position": { "x": 400, "y": 200 },
+      "data": {
+        "id": "proj-2",
+        "type": "project",
+        "label": "Epic",
+        "configured": true,
+        "name": "Social notifications",
+        "platform": "Jira",
+        "typeLabel": "Epic",
+        "issueCount": 4,
+        "progress": 50,
+        "status": "To do",
+        "statusColor": "yellow"
+      }
+    },
+    {
+      "id": "proj-3",
+      "type": "project",
+      "position": { "x": 400, "y": 400 },
+      "data": {
+        "id": "proj-3",
+        "type": "project",
+        "label": "Epic",
+        "configured": true,
+        "name": "Time-based notifications",
+        "platform": "Jira",
+        "typeLabel": "Epic",
+        "issueCount": 1,
+        "progress": 100,
+        "status": "Done",
+        "statusColor": "blue"
+      }
+    },
+    {
+      "id": "proj-4",
+      "type": "project",
+      "position": { "x": 400, "y": 600 },
+      "data": {
+        "id": "proj-4",
+        "type": "project",
+        "label": "Epic",
+        "configured": true,
+        "name": "AI model for song recommendations",
+        "platform": "Jira",
+        "typeLabel": "Epic",
+        "issueCount": 4,
+        "progress": 25,
+        "status": "In progress",
+        "statusColor": "green"
+      }
+    },
+    {
+      "id": "proj-5",
+      "type": "project",
+      "position": { "x": 400, "y": 800 },
+      "data": {
+        "id": "proj-5",
+        "type": "project",
+        "label": "Epic",
+        "configured": true,
+        "name": "More prominent sharing prompts",
+        "platform": "Jira",
+        "typeLabel": "Epic",
+        "issueCount": 4,
+        "progress": 50,
+        "status": "Done",
+        "statusColor": "blue"
+      }
+    },
+    {
+      "id": "metric-1",
+      "type": "metricInput",
+      "position": { "x": 800, "y": 100 },
+      "data": {
+        "id": "metric-1",
+        "type": "metricInput",
+        "label": "Metric",
+        "configured": true,
+        "name": "Premium trial users",
+        "aggregation": "Sum",
+        "periods": [
+          { "label": "Past 7 days", "value": "4,570", "change": 0.87, "trend": "up" },
+          { "label": "Past 6 weeks", "value": "25,958", "change": 2.71, "trend": "up" },
+          { "label": "Past 12 months", "value": "210,135", "change": 38.26, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "metric-2",
+      "type": "metricInput",
+      "position": { "x": 800, "y": 350 },
+      "data": {
+        "id": "metric-2",
+        "type": "metricInput",
+        "label": "Metric",
+        "configured": true,
+        "name": "Avg. sessions per week",
+        "aggregation": "Average",
+        "periods": [
+          { "label": "Past 7 days", "value": "641.45", "change": 1.04, "trend": "up" },
+          { "label": "Past 6 weeks", "value": "633.3", "change": 1.44, "trend": "up" },
+          { "label": "Past 12 months", "value": "570.13", "change": 39.7, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "metric-3",
+      "type": "metricInput",
+      "position": { "x": 800, "y": 600 },
+      "data": {
+        "id": "metric-3",
+        "type": "metricInput",
+        "label": "Metric",
+        "configured": true,
+        "name": "Average session duration",
+        "aggregation": "Sum",
+        "goal": { "text": "50,000 for 2023", "progress": 34 },
+        "periods": [
+          { "label": "MTD", "value": "0", "change": -100, "trend": "down" },
+          { "label": "QTD", "value": "0", "change": -100, "trend": "down" },
+          { "label": "YTD", "value": "17,085.74", "change": -56.99, "trend": "down" }
+        ]
+      }
+    },
+    {
+      "id": "metric-4",
+      "type": "metricInput",
+      "position": { "x": 800, "y": 850 },
+      "data": {
+        "id": "metric-4",
+        "type": "metricInput",
+        "label": "Metric",
+        "configured": true,
+        "name": "Avg. shares per session",
+        "aggregation": "Average",
+        "periods": [
+          { "label": "Past 7 days", "value": "663.37", "change": 0.51, "trend": "up" },
+          { "label": "Past 6 weeks", "value": "658.83", "change": 2.38, "trend": "up" },
+          { "label": "Past 12 months", "value": "593.1", "change": 33.18, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "north-star",
+      "type": "northStar",
+      "position": { "x": 1200, "y": 450 },
+      "data": {
+        "id": "north-star",
+        "type": "northStar",
+        "label": "North Star",
+        "configured": true,
+        "name": "Time spent listening to music by subscribers",
+        "aggregation": "Sum",
+        "periods": [
+          { "label": "Past 7 days", "value": "4.41K mins", "change": 0.43, "trend": "up" },
+          { "label": "Past 6 weeks", "value": "26.15K mins", "change": 2.57, "trend": "up" },
+          { "label": "Past 12 months", "value": "198.31K mins", "change": 38.59, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "kpi-1",
+      "type": "kpi",
+      "position": { "x": 1650, "y": 200 },
+      "data": {
+        "id": "kpi-1",
+        "type": "kpi",
+        "label": "KPI",
+        "configured": true,
+        "name": "ARR",
+        "aggregation": "Amount increased",
+        "periods": [
+          { "label": "Past 7 days", "value": "0", "change": 100, "trend": "up" },
+          { "label": "Past 6 weeks", "value": "-$50", "change": -100.17, "trend": "down" },
+          { "label": "Past 12 months", "value": "$56,760", "change": 1676.57, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "kpi-2",
+      "type": "kpi",
+      "position": { "x": 1650, "y": 450 },
+      "data": {
+        "id": "kpi-2",
+        "type": "kpi",
+        "label": "KPI",
+        "configured": true,
+        "name": "Monthly retention",
+        "aggregation": "Average",
+        "periods": [
+          { "label": "Past 7 days", "value": "72,315.8%", "change": 0, "trend": "neutral" },
+          { "label": "Past 6 weeks", "value": "71,521.9%", "change": 3.32, "trend": "up" },
+          { "label": "Past 12 months", "value": "63,825.0%", "change": 37.7, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "kpi-3",
+      "type": "kpi",
+      "position": { "x": 1650, "y": 700 },
+      "data": {
+        "id": "kpi-3",
+        "type": "kpi",
+        "label": "KPI",
+        "configured": true,
+        "name": "Monthly premium subscriptions",
+        "aggregation": "Sum",
+        "periods": [
+          { "label": "Past 7 days", "value": "5,417.23", "change": 0.59, "trend": "up" },
+          { "label": "Past 6 weeks", "value": "32,032.44", "change": 3.14, "trend": "up" },
+          { "label": "Past 12 months", "value": "246,597.93", "change": 35.85, "trend": "up" }
+        ]
+      }
+    },
+    {
+      "id": "end-1",
+      "type": "end",
+      "position": { "x": 2000, "y": 450 },
+      "data": {
+        "id": "end-1",
+        "type": "end",
+        "label": "End",
+        "configured": true,
+        "title": "Complete",
+        "endMessage": "Map Finished",
+        "summaryEnabled": true
+      }
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-p1", "source": "start-1", "target": "proj-1", "animated": true },
+    { "id": "e-s1-p2", "source": "start-1", "target": "proj-2", "animated": true },
+    { "id": "e-s1-p3", "source": "start-1", "target": "proj-3", "animated": true },
+    { "id": "e-s1-p4", "source": "start-1", "target": "proj-4", "animated": true },
+    { "id": "e-s1-p5", "source": "start-1", "target": "proj-5", "animated": true },
+    { "id": "e-p1-m1", "source": "proj-1", "target": "metric-1", "type": "correlation", "label": "1.0", "animated": false },
+    { "id": "e-p2-m2", "source": "proj-2", "target": "metric-2", "type": "correlation", "label": "1.0", "animated": false },
+    { "id": "e-p3-m2", "source": "proj-3", "target": "metric-2", "type": "correlation", "label": "1.0", "animated": false },
+    { "id": "e-p4-m3", "source": "proj-4", "target": "metric-3", "type": "correlation", "label": "1.0", "animated": false },
+    { "id": "e-p5-m4", "source": "proj-5", "target": "metric-4", "type": "correlation", "label": "1.0", "animated": false },
+    { "id": "e-m1-ns", "source": "metric-1", "target": "north-star", "label": "0.998", "type": "correlation", "animated": false },
+    { "id": "e-m2-ns", "source": "metric-2", "target": "north-star", "label": "0.998", "type": "correlation", "animated": false },
+    { "id": "e-m3-ns", "source": "metric-3", "target": "north-star", "label": "-0.644", "type": "correlation", "animated": false },
+    { "id": "e-m4-ns", "source": "metric-4", "target": "north-star", "label": "0.999", "type": "correlation", "animated": false },
+    { "id": "e-ns-k1", "source": "north-star", "target": "kpi-1", "label": "0.383", "type": "correlation", "animated": false },
+    { "id": "e-ns-k2", "source": "north-star", "target": "kpi-2", "label": "0.999", "type": "correlation", "animated": false },
+    { "id": "e-ns-k3", "source": "north-star", "target": "kpi-3", "label": "0.998", "type": "correlation", "animated": false },
+    { "id": "e-k1-e1", "source": "kpi-1", "target": "end-1", "animated": true },
+    { "id": "e-k2-e1", "source": "kpi-2", "target": "end-1", "animated": true },
+    { "id": "e-k3-e1", "source": "kpi-3", "target": "end-1", "animated": true }
+  ],
+  "version": "1.0",
+  "createdAt": "2026-04-20T10:00:00.000Z"
+}

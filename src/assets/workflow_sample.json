@@ -1,0 +1,192 @@
+{
+  "nodes": [
+    {
+      "id": "proj-1",
+      "type": "task",
+      "position": { "x": 0, "y": 0 },
+      "data": {
+        "id": "proj-1",
+        "type": "task",
+        "label": "Marketing",
+        "title": "New marketing campaign",
+        "description": "Asana Project: 6 issues, 67% done",
+        "configured": true
+      }
+    },
+    {
+      "id": "proj-2",
+      "type": "task",
+      "position": { "x": 0, "y": 150 },
+      "data": {
+        "id": "proj-2",
+        "type": "task",
+        "label": "Social",
+        "title": "Social notifications",
+        "description": "Jira Epic: 4 issues, 50% done [To do]",
+        "configured": true
+      }
+    },
+    {
+      "id": "proj-3",
+      "type": "task",
+      "position": { "x": 0, "y": 300 },
+      "data": {
+        "id": "proj-3",
+        "type": "task",
+        "label": "Time-based",
+        "title": "Time-based notifications",
+        "description": "1 issue, 100% done [Done]",
+        "configured": true
+      }
+    },
+    {
+      "id": "proj-4",
+      "type": "task",
+      "position": { "x": 0, "y": 450 },
+      "data": {
+        "id": "proj-4",
+        "type": "task",
+        "label": "AI Model",
+        "title": "AI model for song recommendations",
+        "description": "4 issues, 25% done [In progress]",
+        "configured": true
+      }
+    },
+    {
+      "id": "proj-5",
+      "type": "task",
+      "position": { "x": 0, "y": 600 },
+      "data": {
+        "id": "proj-5",
+        "type": "task",
+        "label": "Sharing",
+        "title": "More prominent sharing prompts",
+        "description": "4 issues, 50% done [Done]",
+        "configured": true
+      }
+    },
+    {
+      "id": "metric-1",
+      "type": "automation",
+      "position": { "x": 400, "y": 75 },
+      "data": {
+        "id": "metric-1",
+        "type": "automation",
+        "label": "Trial Users",
+        "title": "Premium trial users",
+        "actionId": "aggregate_sum",
+        "actionParams": { "past7d": 4570, "change": 0.87 },
+        "configured": true
+      }
+    },
+    {
+      "id": "metric-2",
+      "type": "automation",
+      "position": { "x": 400, "y": 225 },
+      "data": {
+        "id": "metric-2",
+        "type": "automation",
+        "label": "Sessions",
+        "title": "Avg. sessions per week",
+        "actionId": "aggregate_avg",
+        "actionParams": { "past7d": 641.45, "change": 1.04 },
+        "configured": true
+      }
+    },
+    {
+      "id": "metric-3",
+      "type": "automation",
+      "position": { "x": 400, "y": 375 },
+      "data": {
+        "id": "metric-3",
+        "type": "automation",
+        "label": "Duration",
+        "title": "Average session duration",
+        "actionId": "aggregate_sum",
+        "actionParams": { "goal_progress": 34 },
+        "configured": true
+      }
+    },
+    {
+      "id": "metric-4",
+      "type": "automation",
+      "position": { "x": 400, "y": 525 },
+      "data": {
+        "id": "metric-4",
+        "type": "automation",
+        "label": "Shares",
+        "title": "Avg. shares per session",
+        "actionId": "aggregate_avg",
+        "actionParams": { "past7d": 663.37, "change": 0.51 },
+        "configured": true
+      }
+    },
+    {
+      "id": "north-star",
+      "type": "approval",
+      "position": { "x": 800, "y": 300 },
+      "data": {
+        "id": "north-star",
+        "type": "approval",
+        "label": "North Star",
+        "title": "Time spent listening",
+        "approverRole": "Product Manager",
+        "autoApproveThreshold": 0.9,
+        "configured": true
+      }
+    },
+    {
+      "id": "kpi-1",
+      "type": "end",
+      "position": { "x": 1200, "y": 150 },
+      "data": {
+        "id": "kpi-1",
+        "type": "end",
+        "label": "ARR",
+        "title": "ARR (KPI)",
+        "endMessage": "Target Reached: $56,760",
+        "configured": true
+      }
+    },
+    {
+      "id": "kpi-2",
+      "type": "end",
+      "position": { "x": 1200, "y": 300 },
+      "data": {
+        "id": "kpi-2",
+        "type": "end",
+        "label": "Retention",
+        "title": "Monthly retention",
+        "endMessage": "Current: 72,315.8%",
+        "configured": true
+      }
+    },
+    {
+      "id": "kpi-3",
+      "type": "end",
+      "position": { "x": 1200, "y": 450 },
+      "data": {
+        "id": "kpi-3",
+        "type": "end",
+        "label": "Subscriptions",
+        "title": "Monthly premium subscriptions",
+        "endMessage": "YTD: 246,597.93",
+        "configured": true
+      }
+    }
+  ],
+  "edges": [
+    { "id": "e1-1", "source": "proj-1", "target": "metric-1", "animated": true },
+    { "id": "e2-2", "source": "proj-2", "target": "metric-2" },
+    { "id": "e3-2", "source": "proj-3", "target": "metric-2" },
+    { "id": "e4-3", "source": "proj-4", "target": "metric-3" },
+    { "id": "e5-4", "source": "proj-5", "target": "metric-4" },
+    { "id": "em1-ns", "source": "metric-1", "target": "north-star", "label": "0.998" },
+    { "id": "em2-ns", "source": "metric-2", "target": "north-star", "label": "0.998" },
+    { "id": "em3-ns", "source": "metric-3", "target": "north-star", "label": "-0.644" },
+    { "id": "em4-ns", "source": "metric-4", "target": "north-star", "label": "0.999" },
+    { "id": "ens-k1", "source": "north-star", "target": "kpi-1", "label": "0.383" },
+    { "id": "ens-k2", "source": "north-star", "target": "kpi-2", "label": "0.999" },
+    { "id": "ens-k3", "source": "north-star", "target": "kpi-3", "label": "0.998" }
+  ]
+}
