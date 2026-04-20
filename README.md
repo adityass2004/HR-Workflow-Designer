@@ -1,8 +1,8 @@
 # HR Workflow Designer
 ### Tredence Studio — Full Stack Engineering Intern Case Study
 
-🔗 **Live Demo:** [https://hr-workflow-designer.vercel.app](https://hr-workflow-designer.vercel.app)
-📁 **Repository:** [https://github.com/your-username/hr-workflow-designer](https://github.com/your-username/hr-workflow-designer)
+🔗 [**Live Demo**](https://tredence-case-study.vercel.app)
+📁 [**Repository**](https://github.com/adityass2004/hr-workflow-designer)
 
 ---
 
@@ -98,7 +98,7 @@ User action → Zustand store mutation → React Flow re-render
 ## Run Locally
 
 ```bash
-git clone https://github.com/your-username/hr-workflow-designer
+git clone https://github.com/adityass2004/hr-workflow-designer
 cd hr-workflow-designer
 npm install
 npm run dev
