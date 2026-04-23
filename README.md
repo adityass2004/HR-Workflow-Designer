@@ -132,5 +132,3 @@ npm run preview  # Preview production build locally
 - Cycles are treated as hard errors — simulation will not run with a cycle present
 
 ---
-
-*Built by [Your Name] · April 2025*
